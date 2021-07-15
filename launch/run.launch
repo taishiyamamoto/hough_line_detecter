@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="hough_line_detecter" type="hough_line_detect_node" name="hough_line_detect_node">
+        <param name="input_image_topic" value="camera/rgb/image_raw"/>
+        <param name="result_image_topic" value="result_image"/>
+        <param name="binarize_image_topic" value="binarize_image"/>
+        <param name="binarize_threshold" value="200" />
+        <param name="hough_resolution" value="180"/>
+        <param name="hough_threshold" value="5"/>
+        <param name="hough_minlinelength" value="20"/>
+        <param name="maxlinegap" value="5"/>
+    </node>
+</launch>
